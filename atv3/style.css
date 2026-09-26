@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, "Segoe UI", sans-serif;
+  background: #1c1f26;
+  color: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  padding: 48px 16px;
+}
+
+.app {
+  width: 100%;
+  max-width: 420px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #3a3f4b;
+  background: #262a33;
+  color: #e8e8e8;
+  font-size: 0.95rem;
+}
+
+#task-input:focus {
+  outline: 2px solid #5a7fff;
+  outline-offset: 1px;
+}
+
+#add-btn {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #5a7fff;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+#add-btn:hover {
+  background: #4468e0;
+}
+
+#task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#task-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: #262a33;
+  border: 1px solid #3a3f4b;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#task-list li:hover {
+  border-color: #5a7fff;
+}
+
+.task-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+.completed .task-text {
+  text-decoration: line-through;
+  color: #7a7f8a;
+}
